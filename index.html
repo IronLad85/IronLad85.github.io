@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Portfolio (Siddharth Sakre)</title>
+
+    <script>
+      var projectUrls = {
+        movieflix: {
+          demo: "https://ironlad85.github.io/movieflix_react_tmdb/",
+          source: "https://github.com/IronLad85/movieflix_react_tmdb"
+        },
+        "flutter-music": {
+          demo:
+            "https://play.google.com/store/apps/details?id=com.ironlad.flutter_musiq&hl=en",
+          source: "https://github.com/IronLad85/Flutter-Musiq"
+        },
+        "split-screen": {
+          demo: "https://ironlad85.github.io/Splitscreen-UI-Interaction",
+          source: "https://github.com/IronLad85/Splitscreen-UI-Interaction"
+        },
+        accordian: {
+          demo: "https://ironlad85.github.io/horizontal-accordian-interaction",
+          source:
+            "https://github.com/IronLad85/horizontal-accordian-interaction"
+        },
+        "fluid-slider": {
+          source: "https://github.com/IronLad85/flutter-fluid-slider"
+        },
+        calendar: {
+          source: "https://github.com/IronLad85/flutter_calendar_strip"
+        }
+      };
+
+      function openSource(project) {
+        var win = window.open(projectUrls[project].source, "_blank");
+        win.focus();
+      }
+
+      function openDemo(project) {
+        var win = window.open(projectUrls[project].demo, "_blank");
+        win.focus();
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- <span id="spinner-loading">
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </span> -->
+    <span id="site-content" class="hidden">
+      <header>
+        <div id="header-img"></div>
+        <div id="header-text">
+          <div id="name">
+            <div
+              class="top-hr"
+              data-aos-once="true"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            ></div>
+            <h1 data-aos-once="true" data-aos="fade" data-aos-duration="1000">
+              Siddharth Sakre
+            </h1>
+            <div
+              class="bottom-hr"
+              data-aos-once="true"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            ></div>
+          </div>
+
+          <div class="console-text">
+            <h2 id="main" class="typer">
+              <span class="cursor" data-owner="main"></span>
+            </h2>
+          </div>
+          <div class="show-more">
+            <a href="#about">View More <strong>↓</strong></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- menu for large screens -->
+      <div class="hidden-content navbar-wraper">
+        <nav>
+          <div id="go-to-top" class="logo col-sm-1">
+            <a href="#"><img src="images/terminal.webp" alt="logo"/></a>
+          </div>
+          <div class="col-sm-11">
+            <ul>
+              <li class="section"><a href="#about">About me</a></li>
+              <li class="section"><a href="#experience">Projects</a></li>
+              <li class="section"><a href="#codepen">Codepen</a></li>
+              <li class="section"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- end -->
+
+      <!-- menu for small screens -->
+      <label class="hamburguer-menu">
+        <input type="checkbox" />
+        <span class="menu">
+          <span class="hamburger"></span>
+        </span>
+        <ul>
+          <li class="section"><a href="#about">About me</a></li>
+          <li class="section"><a href="#experience">Projects</a></li>
+          <li class="section"><a href="#codepen">Codepen</a></li>
+          <li class="section"><a href="#contact">Contact</a></li>
+        </ul>
+      </label>
+      <!-- end -->
+
+      <div id="wrapperContainer">
+        <div id="content">
+          <div id="about" class="container">
+            <div class="section-title">
+              <h1>About me</h1>
+              <div
+                class="custom-hr"
+                data-aos-once="true"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              ></div>
+            </div>
+            <div
+              class="row"
+              data-aos-once="true"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
+              <img
+                class="profile col-xs-12 col-sm-4"
+                src="images/profile1.jpg"
+                alt="Profile image"
+              />
+              <div id="profile-about" class="col-sm-8 col-xs-12">
+                <p>
+                  Hello! My name is <span style="font-weight:bold; font-size:20px"> Siddharth Sakre</span>. <br /><br />
+                  I'm 22 years old self taught developer. I have a high school
+                  diploma in Computer Science & Engg. I love programming and
+                  building applications. Apart from development, I enjoy
+                  researching about computer security & tinkering with embedded
+                  things like Ardunio, Esp8266 etc.
+
+                  <br />
+                  <br />
+                  I have 2 years of work experience with a startup company in my
+                  city. I worked as Full stack web developer & also worked on
+                  Hybrid App platforms like Ionic, React-Native & Flutter.
+                </p>
+                <div class="cv-button-box">
+                  <a
+                    class="cv-button"
+                    target="_blank"
+                    href="https://drive.google.com/open?id=17w5w8GLWFUrPxIVA63GyEpWwl-_vLWfi"
+                  >
+                    Download CV
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="experience" class="container-fluid full-page">
+            <div class="full-container">
+              <div class="section-title">
+                <h1>Projects</h1>
+                <div
+                  class="custom-hr"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-duration="700"
+                ></div>
+              </div>
+              <div class="row">
+                <div class="project-container-row">
+                  <div id="unpie" class="project col-md-4 col-sm-12  fadeIn">
+                    <div class="exp-box">
+                      <img
+                        class="img-responsive"
+                        src="images/experience/tmdb.png"
+                        alt="pic: un pie y otro pie"
+                      />
+                      <div class="project-info">
+                        <div class="project-info-content">
+                          <div class="project-name text-faded">
+                            MovieFlix
+                          </div>
+                          <div class="project-tech">React Redux + TMDB API</div>
+                        </div>
+                        <div class="project-buttons">
+                          <!-- <button class="project-button"> Demo </button>
+                          <button class="project-button"> Github </button> -->
+                          <button
+                            class="more-info"
+                            data-toggle="modal"
+                            data-target="#modal-movieflix"
+                          >
+                            More Info
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    id="construcciones"
+                    class="project col-md-4 col-sm-12 card  fadeIn"
+                  >
+                    <div class="exp-box">
+                      <img
+                        class="img-responsive"
+                        src="images/experience/accordian.png"
+                        alt="pic: construcciones rodriguez"
+                      />
+                      <div class="project-info">
+                        <div class="project-info-content">
+                          <div class="project-name text-faded">
+                            Horizontal Accordian UI Interaction
+                          </div>
+                          <div class="project-tech">
+                            Web UI Interaction, React.JS
+                          </div>
+                        </div>
+                        <div class="project-buttons">
+                          <!-- <button class="project-button"> View Demo </button> -->
+                          <!-- <button class="project-button"> Github </button> -->
+                          <button
+                            class="more-info"
+                            data-toggle="modal"
+                            data-target="#modal-construcciones"
+                          >
+                            More Info
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    id="modernizacion"
+                    class="project col-md-4 col-sm-12 card  fadeIn"
+                  >
+                    <div class="exp-box">
+                      <img
+                        class="img-responsive"
+                        src="images/experience/split.png"
+                        alt="pic: Modernización"
+                      />
+                      <div class="project-info">
+                        <div class="project-info-content">
+                          <div class="project-name text-faded">
+                            Split-Screen UI Interaction
+                          </div>
+                          <div class="project-tech">Web UI Interaction</div>
+                        </div>
+                        <div class="project-buttons">
+                          <!-- <button class="project-button"> Demo </button>
+                          <button class="project-button"> Github </button> -->
+                          <button
+                            class="more-info"
+                            data-toggle="modal"
+                            data-target="#modal-explorer"
+                          >
+                            More Info
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-container-row">
+                  <div
+                    id="protagonistas"
+                    class="project col-md-4 col-sm-12 card  fadeIn"
+                  >
+                    <div class="exp-box">
+                      <img
+                        class="img-responsive"
+                        src="images/experience/music.png"
+                        alt="pic: Protagonistas"
+                      />
+                      <div class="project-info">
+                        <div class="project-info-content">
+                          <div class="project-name text-faded">
+                            Flutter Music Player
+                          </div>
+                          <div class="project-tech">Flutter App (Dart)</div>
+                        </div>
+                        <div class="project-buttons">
+                          <!-- <button class="project-button"> Demo </button>
+                          <button class="project-button"> Github </button> -->
+                          <button
+                            class="more-info"
+                            data-toggle="modal"
+                            data-target="#modal-music"
+                          >
+                            More Info
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="protagonistas"
+                    class="project col-md-4 col-sm-12 card  fadeIn"
+                  >
+                    <div class="exp-box">
+                      <img
+                        class="img-responsive"
+                        src="images/experience/calendar.png"
+                        alt="pic: Protagonistas"
+                      />
+                      <div class="project-info">
+                        <div class="project-info-content">
+                          <div class="project-name text-faded">
+                            Flutter Calendar Strip
+                          </div>
+                          <div class="project-tech">
+                            Flutter Package / Component
+                          </div>
+                        </div>
+                        <div class="project-buttons">
+                          <!-- <button class="project-button"> Demo </button>
+                          <button class="project-button"> Github </button> -->
+                          <button
+                            class="more-info"
+                            data-toggle="modal"
+                            data-target="#modal-calendar"
+                          >
+                            More Info
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="Slider"
+                    class="project col-md-4 col-sm-12 card  fadeIn"
+                  >
+                    <div class="exp-box">
+                      <img
+                        class="img-responsive"
+                        src="images/experience/slider.png"
+                        alt="pic: Slider"
+                      />
+                      <div class="project-info">
+                        <div class="project-info-content">
+                          <div class="project-name text-faded">
+                            Flutter Fluid Slider
+                          </div>
+                          <div class="project-tech">Flutter (Dart)</div>
+                        </div>
+                        <div class="project-buttons">
+                          <!-- <button class="project-button"> Demo </button>
+                          <button class="project-button"> Github </button> -->
+                          <button
+                            class="more-info"
+                            data-toggle="modal"
+                            data-target="#modal-slider"
+                          >
+                            More Info
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="codepen" class="container-fluid full-page">
+            <div class="container">
+              <div class="section-title">
+                <h1>My Codepens</h1>
+                <div
+                  class="custom-hr"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-duration="700"
+                ></div>
+              </div>
+              <div
+                class="row codpen-container"
+                data-aos-once="true"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <h3>Image Clip Path Transition</h3>
+                <p
+                  class="codepen"
+                  data-height="542"
+                  data-theme-id="default"
+                  data-default-tab="result"
+                  data-user="Siddharth_Stark"
+                  data-slug-hash="WNNgqbv"
+                  style="height: 542px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                  data-pen-title="Clip Path Transition"
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/Siddharth_Stark/pen/WNNgqbv">
+                      Clip Path Transition</a
+                    >
+                    by Siddharth (<a href="https://codepen.io/Siddharth_Stark"
+                      >@Siddharth_Stark</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <div
+                class="row codpen-container"
+                data-aos-once="true"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <h3>Flip Image Card</h3>
+                <p
+                  class="codepen"
+                  data-height="468"
+                  data-theme-id="default"
+                  data-default-tab="result"
+                  data-user="Siddharth_Stark"
+                  data-slug-hash="BaaPWvq"
+                  style="height: 468px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                  data-pen-title="Flip Image Card "
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/Siddharth_Stark/pen/BaaPWvq">
+                      Flip Image Card
+                    </a>
+                    by Siddharth (<a href="https://codepen.io/Siddharth_Stark"
+                      >@Siddharth_Stark</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+
+              <div
+                class="row codpen-container"
+                data-aos-once="true"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <h3>Animated SVG Switch</h3>
+                <p
+                  class="codepen"
+                  data-height="322"
+                  data-theme-id="default"
+                  data-default-tab="css,result"
+                  data-user="Siddharth_Stark"
+                  data-slug-hash="JjjWrVV"
+                  style="height: 322px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                  data-pen-title="Animated SVG Toggle (GSAP)"
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/Siddharth_Stark/pen/JjjWrVV">
+                      Animated SVG Toggle (GSAP)</a
+                    >
+                    by Siddharth (<a href="https://codepen.io/Siddharth_Stark"
+                      >@Siddharth_Stark</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+
+              <div
+                class="row codpen-container"
+                data-aos-once="true"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <h3>Card Badges</h3>
+                <p
+                  class="codepen"
+                  data-height="583"
+                  data-theme-id="default"
+                  data-default-tab="result"
+                  data-user="Siddharth_Stark"
+                  data-slug-hash="jOOvXXQ"
+                  style="height: 583px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                  data-pen-title="Card Badge"
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/Siddharth_Stark/pen/jOOvXXQ">
+                      Card Badge</a
+                    >
+                    by Siddharth (<a href="https://codepen.io/Siddharth_Stark"
+                      >@Siddharth_Stark</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+            </div>
+          </div>
+
+          <div id="contact" class="pre-full-page">
+            <svg
+              preserveAspectRatio="none"
+              viewBox="0 0 100 102"
+              height="75"
+              width="100%"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0 L50 100 L100 0 Z" fill="#fff"></path>
+            </svg>
+            <div class="container">
+              <div class="section-title">
+                <h1>Contact</h1>
+                <div
+                  class="custom-hr"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-duration="700"
+                ></div>
+              </div>
+              <div
+                class="form-container col-xs-12 col-md-6"
+                data-aos-once="true"
+                data-aos="flip-down"
+                data-aos-duration="700"
+              >
+                <form
+                  class="form-horizontal"
+                  method="POST"
+                  action="https://formspree.io/xjvgzvzr"
+                >
+                  <div class="form-group">
+                    <p>Have a question or want to work ?</p>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputName"
+                      name="name"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail"
+                      name="_replyto"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      id="inputBody"
+                      name="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      id="send-contact-form"
+                      class="btn btn-success col-xs-3"
+                    >
+                      SUBMIT
+                    </button>
+                    <span id="empty-form-alert" class="col-xs-9"></span>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xs-12 col-md-3 col-md-offset-2 social-networks">
+                <div>
+                  <h4>... or look for me in</h4>
+
+                  <a target="_blank" href="https://www.github.com/ironlad85">
+                    <svg
+                      class="contact-logo github-svg-logo"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="438.549px"
+                      height="438.549px"
+                      viewBox="0 0 438.549 438.549"
+                      style="enable-background:new 0 0 438.549 438.549;"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <path
+                          d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365 c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63 c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996 c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136 c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559 c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559 c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997 c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851 c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136 c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41 c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126 c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817 c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994 c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849 c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24 c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979 c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146 c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995 c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906 C438.536,184.851,428.728,148.168,409.132,114.573z"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a target="_blank" href="https://twitter.com/ironlad85">
+                    <svg
+                      class="contact-logo"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 400 400"
+                      style="enable-background:new 0 0 400 400;"
+                      xml:space="preserve"
+                    >
+                      <style type="text/css">
+                        .st0 {
+                          fill: #1da1f2;
+                        }
+
+                        .st1 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                      <g id="Dark_Blue">
+                        <circle class="st0" cx="200" cy="200" r="200" />
+                      </g>
+                      <g id="Logo__x2014__FIXED">
+                        <path
+                          class="st1"
+                          d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25 c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2 c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2 c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7 c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7 C110.8,297.5,136.2,305.5,163.4,305.5"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/siddharth-v-s-926a54136/"
+                  >
+                    <svg
+                      class="contact-logo"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 112.196 112.196"
+                      style="enable-background:new 0 0 112.196 112.196;"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <circle
+                          style="fill:#007AB9;"
+                          cx="56.098"
+                          cy="56.097"
+                          r="56.098"
+                        />
+                        <g>
+                          <path
+                            style="fill:#F1F2F2;"
+                            d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118 c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715 c-0.027,0.045-0.065,0.089-0.089,0.132h0.089v-0.132c1.782-2.742,4.96-6.662,12.085-6.662 C83.002,42.462,89.616,48.226,89.616,60.611L89.616,60.611z M34.656,23.969c-4.587,0-7.588,3.011-7.588,6.967 c0,3.872,2.914,6.97,7.412,6.97h0.087c4.677,0,7.585-3.098,7.585-6.97C42.063,26.98,39.244,23.969,34.656,23.969L34.656,23.969z M27.865,83.739H41.27V43.409H27.865V83.739z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p class="text-center">
+            Coded with <span class="heart-emoji">❤ </span>by
+            <strong> Siddhartha Sakre</strong>.
+          </p>
+        </footer>
+      </div>
+    </span>
+
+    <!-- Modal Markups -->
+
+    <div
+      id="modal-movieflix"
+      class="modal modal-message fade"
+      style="display: none;"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">MovieFlix using ReactJS & TMDB API</h4>
+            <button
+              type="button"
+              class="btn btn-default"
+              id="btnclose"
+              data-dismiss="modal"
+            >
+              &#10006;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-carousel">
+              <div
+                id="carousel-movieflix"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel-movieflix"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carousel-movieflix" data-slide-to="1"></li>
+                  <li data-target="#carousel-movieflix" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img
+                      src="images/experience/tmdb.png"
+                      alt="movieflix example"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="images/experience/tmdb2.png"
+                      alt="movieflix example"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="images/experience/tmdb3.png"
+                      alt="unpie example"
+                    />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a
+                  class="left carousel-control"
+                  href="#carousel-movieflix"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="material-icons left ">chevron_left</i>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#carousel-movieflix"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="material-icons right">chevron_right</i>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="content">
+              <p>
+                MovieFlix is a React-Redux Application made using TMDB REST APIs
+                for fetching Movies, Movie Details, Cast, Cast Details, Movie
+                Banners, Trailer Video Links.<br />
+                <br />
+                Youtube player is implemented to watch movie trailers in a
+                modal.
+              </p>
+              <div class="project-info-buttons">
+                <div
+                  class="project-button github-button"
+                  onclick="openSource('movieflix')"
+                >
+                  <img
+                    src="./images/experience/github-logo.png"
+                    class="github-logo"
+                    width="22"
+                  />
+                  <div>Source (Github)</div>
+                </div>
+                <div
+                  class="project-button demo-button"
+                  onclick="openDemo('movieflix')"
+                >
+                  <i class="material-icons" style="margin-right:8px">
+                    play_circle_filled
+                  </i>
+                  <div>View Demo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-construcciones"
+      class="modal modal-message modal-success fade"
+      style="display: none;"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Horizontal Accordian UI Interaction
+            </h4>
+            <button
+              type="button"
+              class="btn btn-default"
+              id="btnclose"
+              data-dismiss="modal"
+            >
+              &#10006;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-carousel">
+              <div
+                id="carousel-construcciones"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel-construcciones"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carousel-construcciones"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carousel-construcciones"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item">
+                    <img
+                      src="images/experience/accordian3.png"
+                      alt="construcciones example"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="images/experience/accordian2.png"
+                      alt="construcciones example"
+                    />
+                  </div>
+                  <div class="item active">
+                    <img
+                      src="images/experience/accordian.png"
+                      alt="construcciones example"
+                    />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a
+                  class="left carousel-control"
+                  href="#carousel-construcciones"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="material-icons left ">chevron_left</i>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#carousel-construcciones"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="material-icons right">chevron_right</i>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="content">
+              <p>
+                This project is an UI implementation of Horizontal Accordian UI
+                Interaction Concept. Inspired by an design in Dribble. React.js
+                and CSS animations are used in this project.
+              </p>
+              <div class="project-info-buttons">
+                <div
+                  class="project-button github-button"
+                  onclick="openSource('accordian')"
+                >
+                  <img
+                    src="./images/experience/github-logo.png"
+                    class="github-logo"
+                    width="22"
+                  />
+                  <div>Source (Github)</div>
+                </div>
+                <div
+                  class="project-button demo-button"
+                  onclick="openDemo('accordian')"
+                >
+                  <i class="material-icons" style="margin-right:8px">
+                    play_circle_filled
+                  </i>
+                  <div>View Demo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-explorer"
+      class="modal modal-message fade"
+      style="display: none;"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Split Screen UI Interaction</h4>
+            <button
+              type="button"
+              class="btn btn-default"
+              id="btnclose"
+              data-dismiss="modal"
+            >
+              &#10006;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-carousel">
+              <div
+                id="carousel-explorer"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel-explorer"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img
+                      src="images/experience/split2.png"
+                      alt="modernizacion example"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="images/experience/split3.png"
+                      alt="modernizacion example"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="images/experience/split4.png"
+                      alt="modernizacion example"
+                    />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a
+                  class="left carousel-control"
+                  href="#carousel-explorer"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="material-icons left ">chevron_left</i>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#carousel-explorer"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="material-icons right">chevron_right</i>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="content">
+              <p>
+                This project is an UI implementation of Split Screen UI
+                Interaction Concept. Inspired by an design in Dribble. HTML, CSS
+                animations are used in this project.
+              </p>
+              <div class="project-info-buttons">
+                <div
+                  class="project-button github-button"
+                  onclick="openSource('split-screen')"
+                >
+                  <img
+                    src="./images/experience/github-logo.png"
+                    class="github-logo"
+                    width="22"
+                  />
+                  <div>Source (Github)</div>
+                </div>
+                <div
+                  class="project-button demo-button"
+                  onclick="openDemo('split-screen')"
+                >
+                  <i class="material-icons" style="margin-right:8px">
+                    play_circle_filled
+                  </i>
+                  <div>View Demo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-music"
+      class="modal modal-message fade"
+      style="display: none;"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Flutter Music Player</h4>
+            <button
+              type="button"
+              class="btn btn-default"
+              id="btnclose"
+              data-dismiss="modal"
+            >
+              &#10006;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-carousel">
+              <div
+                id="carousel-pro"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel-pro"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/experience/music1.png" alt="pro example" />
+                  </div>
+                  <div class="item">
+                    <img src="images/experience/music2.png" alt="pro example" />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a
+                  class="left carousel-control"
+                  href="#carousel-pro"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="material-icons left ">chevron_left</i>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#carousel-pro"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="material-icons right">chevron_right</i>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="content">
+              <p>
+                This Android Application is made using Flutter Framework (Dart).
+                It is an offline Music Player for android phones made using BLoc
+                pattern in
+                <span class="info-tech">Flutter</span>
+                <span class="info-tech"></span>.
+              </p>
+              <div class="project-info-buttons">
+                <div
+                  class="project-button github-button"
+                  onclick="openSource('flutter-music')"
+                >
+                  <img
+                    src="./images/experience/github-logo.png"
+                    class="github-logo"
+                    width="22"
+                  />
+                  <div>Source (Github)</div>
+                </div>
+                <div
+                  class="project-button demo-button"
+                  onclick="openDemo('flutter-music')"
+                >
+                  <i class="material-icons" style="margin-right:8px">
+                    play_circle_filled
+                  </i>
+                  <div>View Demo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-calendar"
+      class="modal modal-message fade"
+      style="display: none;"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Flutter Calendar Strip</h4>
+            <button
+              type="button"
+              class="btn btn-default"
+              id="btnclose"
+              data-dismiss="modal"
+            >
+              &#10006;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-carousel">
+              <div
+                id="carousel-calendar"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel-calendar"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carousel-calendar"
+                    data-slide-to="1"
+                    class="active"
+                  ></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img
+                      src="images/experience/calendar2.png"
+                      alt="pro example"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="images/experience/calendar.png"
+                      alt="pro example"
+                    />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a
+                  class="left carousel-control"
+                  href="#carousel-calendar"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="material-icons left ">chevron_left</i>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#carousel-calendar"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="material-icons right">chevron_right</i>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="content">
+              <p>
+                This Project is an component / widget package made for
+                <span class="info-tech">Flutter</span> applications. It is a
+                calendar strip with base animation. This package is published in
+                <span class="info-tech">pub.dev (Flutter package Repo)</span> &
+                it is open source and highly customizable in terms of UI
+              </p>
+              <div class="project-info-buttons">
+                <div
+                  class="project-button github-button"
+                  onclick="openSource('calendar')"
+                >
+                  <img
+                    src="./images/experience/github-logo.png"
+                    class="github-logo"
+                    width="22"
+                  />
+                  <div>Source (Github)</div>
+                </div>
+                <!-- <div
+                  class="project-button demo-button"
+                  onclick="openDemo('calendar')"
+                >
+                  <i class="material-icons" style="margin-right:8px">
+                    play_circle_filled
+                  </i>
+                  <div>View Demo</div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-slider"
+      class="modal modal-message fade"
+      style="display: none;"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Flutter Fluid Slider</h4>
+            <button
+              type="button"
+              class="btn btn-default"
+              id="btnclose"
+              data-dismiss="modal"
+            >
+              &#10006;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-carousel">
+              <div
+                id="carousel-slider"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel-slider"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carousel-slider"
+                    data-slide-to="1"
+                    class="active"
+                  ></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/experience/slider.png" alt="pro example" />
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <!-- <a
+                  class="left carousel-control"
+                  href="#carousel-slider"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="material-icons left ">chevron_left</i>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#carousel-slider"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="material-icons right">chevron_right</i>
+                </a> -->
+              </div>
+            </div>
+            <hr />
+            <div class="content">
+              <p>
+                This Project is an component / widget package made for
+                <span class="info-tech">Flutter</span> applications. It is a
+                Fluid Slider with animation. This package is published in
+                <span class="info-tech">pub.dev (Flutter package Repo)</span> &
+                it is open source and highly customizable in terms of UI
+              </p>
+              <div class="project-info-buttons">
+                <div
+                  class="project-button github-button"
+                  onclick="openSource('fluid-slider')"
+                >
+                  <img
+                    src="./images/experience/github-logo.png"
+                    class="github-logo"
+                    width="22"
+                  />
+                  <div>Source (Github)</div>
+                </div>
+                <!-- <div
+                      class="project-button demo-button"
+                      onclick="openDemo('calendar')"
+                    >
+                      <i class="material-icons" style="margin-right:8px">
+                        play_circle_filled
+                      </i>
+                      <div>View Demo</div>
+                    </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.1.1/typeit.modern.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/functions.js"></script>
+  </body>
+</html>
