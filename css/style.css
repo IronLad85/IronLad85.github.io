@@ -504,12 +504,21 @@ div #profile-about {
   align-items: center;
   margin-top: 25px;
 }
+
 .cv-button {
   padding: 10px;
   background-color: #337ab7 !important;
   color: #fff;
   font-weight: 700;
 }
+.cv-button:hover {
+  padding: 10px;
+  background-color: #2167a3 !important;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 #experience button {
   color: #777;
 }
