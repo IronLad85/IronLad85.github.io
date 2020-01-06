@@ -511,7 +511,8 @@ div #profile-about {
   color: #fff;
   font-weight: 700;
 }
-.cv-button:hover {
+
+.cv-button:hover, .cv-button:focus {
   padding: 10px;
   background-color: #2167a3 !important;
   color: #fff;
