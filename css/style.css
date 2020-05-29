@@ -71,14 +71,16 @@
     transform: scale3D(0, 0, 1);
   }
 }
-.fadeIn {
+
+/* .fadeIn {
   opacity: 1;
   animation-name: fadeInOpacity;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
+} */
+
 a {
   text-decoration: none;
 }
@@ -529,26 +531,40 @@ div #profile-about {
 .exp-box {
   position: relative;
   display: block;
-  max-width: 650px;
+  max-width: 100%;
+  width: 100%;
   margin: 0;
 }
 .exp-box img {
-  border-radius: 10px;
-  width: 360px;
-  height: 240px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
 }
+
+.exp-box img:hover{
+  transform: scale(1.04);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
 .project-info {
+  position: absolute;
+  display: none;
+  justify-content:flex-end;
+  padding:20px 0px;  
   color: #555;
-  display: block;
   bottom: 0;
   text-align: center;
   width: 100%;
-  height: 100%;
+  height:100%;
   border-radius: 10px;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+  flex-direction: column;
 }
+
 .project-info-buttons {
   display: flex;
   flex-direction: row;
@@ -582,11 +598,7 @@ div #profile-about {
 }
 .project {
   margin: 10px;
-  max-width: 400px;
-  filter: drop-shadow(0 2px 5px #ccc);
-  background: #fff;
-  border-radius: 10px;
-  padding: 15px 10px;
+  filter: drop-shadow(0 2px 10px #ccc);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -598,7 +610,7 @@ div #profile-about {
   flex-direction: row;
   flex: 1 1 auto;
   justify-content: space-evenly;
-  padding: 15px;
+  padding: 5px 15px;
 }
 .project-name.text-faded {
   font-size: 18px;
